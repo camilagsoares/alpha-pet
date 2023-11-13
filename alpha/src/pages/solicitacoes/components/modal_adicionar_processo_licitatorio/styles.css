@@ -1,0 +1,15 @@
+.projetosId-1 {
+    background-color: pink;
+    height: 40px;
+    width: 40px;
+  }
+  
+  .projetosId-2 {
+    background-color: cor2;
+    height: altura2;
+    width: largura2;
+  }
+
+  .included {
+    color: green; /* Escolha a cor desejada */
+  }

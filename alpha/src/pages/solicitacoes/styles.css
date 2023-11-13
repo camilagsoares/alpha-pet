@@ -1,0 +1,42 @@
+.box {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    width: 20rem;
+    height: 3rem;
+    background-color: #fff;
+    color: grey.800;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 2px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Ajuste a margem conforme desejado */
+  }
+  
+  .bolinhaVerde,
+  .bolinhaLaranja,
+  .bolinhaCinza {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+    display: inline-block;
+  }
+  
+  .bolinhaVerde {
+    background-color: #5CB85C;
+  }
+  
+  .bolinhaLaranja {
+    background-color: #EC8718;
+  }
+  
+  .bolinhaCinza {
+    background-color: #CCCCCC;
+  }
+  

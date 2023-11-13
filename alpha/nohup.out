@@ -1,0 +1,1034 @@
+
+  [32m[1mVITE[22m v4.4.9[39m  [2mready in [0m[1m534[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+[2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[2m11:20:49[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\camila.soares\Desktop\workflow-app\src\pages\solicitacoes\solicitacoes.page.jsx: Unexpected token, expected "," (140:9)
+
+  138 |             Adicionar Processo Licitatório
+  139 |           </Button>
+> 140 |         )}
+      |          ^
+  141 |         {/* <Button startIcon={<AddCircle />} variant='outlined' color='primary' onClick={handleAbrirAdcPLic}>
+  142 |           Adicionar Processo Licitatorio
+  143 |         </Button> */}[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/camila.soares/Desktop/workflow-app/src/pages/solicitacoes/solicitacoes.page.jsx[39m:140:9
+[33m  140|          )}
+  141|          {/* <Button startIcon={<AddCircle />} variant='outlined' color='primary' onClick={handleAbrirAdcPLic}>
+  142|            Adicionar Processo Licitatorio
+     |                            ^
+  143|          </Button> */}
+  144|       <Grid container justifyContent="flex-end" alignItems="center" spacing={2}>[39m
+      at constructor (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:348:19)
+      at JSXParserMixin.raise (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:3202:19)
+      at JSXParserMixin.unexpected (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:3232:16)
+      at JSXParserMixin.expect (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:3569:28)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11448:14)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11113:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6916:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOpBaseRightExpr (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10729:34)
+      at JSXParserMixin.parseExprOpRightExpr (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10724:21)
+      at JSXParserMixin.parseExprOp (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10687:27)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10645:17)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10533:23)
+      at C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10529:39
+      at JSXParserMixin.allowInAnd (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12229:12)
+      at JSXParserMixin.parseExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10529:17)
+      at JSXParserMixin.jsxParseExpressionContainer (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6776:31)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6855:36)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6842:32)
+      at JSXParserMixin.jsxParseElement (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6899:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6911:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:39
+      at JSXParserMixin.allowInAnd (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12229:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11462:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11113:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6916:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10533:23)
+      at C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10529:39
+      at JSXParserMixin.allowInAnd (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12224:16)
+      at JSXParserMixin.parseExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10529:17)
+[2m11:20:55[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/pages/solicitacoes/solicitacoes.page.jsx[22m
+[2m11:21:34[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/solicitacoes.page.jsx[22m
+[2m11:22:35[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layouts/app/index.jsx[22m
+[2m11:22:37[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layouts/app/index.jsx[22m
+[2m11:22:37[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\camila.soares\Desktop\workflow-app\src\layouts\app\index.jsx: Unexpected token (245:55)
+
+  243 |           </NavLink>
+  244 |           <SubMenuCadastros /> */}
+> 245 |           {session &&( session.permissao.id === 1 ) || && session.permissao.id !== undefined && ( 
+      |                                                        ^
+  246 |             <>
+  247 |               <NavLink to='/licitacoes'>
+  248 |                 <ListItemButton>[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/camila.soares/Desktop/workflow-app/src/layouts/app/index.jsx[39m:245:55
+[33m  249|                    <ListItemIcon>
+  250|                      <WorkIcon color='primary' />
+  251|                    </ListItemIcon>
+     |                               ^
+  252|                    <ListItemText primary='Processos Licitatórios' />
+  253|                  </ListItemButton>[39m
+      at constructor (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:348:19)
+      at JSXParserMixin.raise (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:3202:19)
+      at JSXParserMixin.unexpected (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:3232:16)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11233:16)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6916:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOpBaseRightExpr (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10729:34)
+      at JSXParserMixin.parseExprOpRightExpr (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10724:21)
+      at JSXParserMixin.parseExprOp (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10687:27)
+      at JSXParserMixin.parseExprOp (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10695:21)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10645:17)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10533:23)
+      at C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10529:39
+      at JSXParserMixin.allowInAnd (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12229:12)
+      at JSXParserMixin.parseExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10529:17)
+      at JSXParserMixin.jsxParseExpressionContainer (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6776:31)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6855:36)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6842:32)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6842:32)
+      at JSXParserMixin.jsxParseElement (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6899:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6911:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:39
+      at JSXParserMixin.allowInAnd (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12229:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11462:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11113:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6916:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10533:23)
+      at C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10529:39
+      at JSXParserMixin.allowInAnd (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12224:16)
+      at JSXParserMixin.parseExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10529:17)
+[2m11:22:40[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layouts/app/index.jsx[22m
+[2m11:22:42[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layouts/app/index.jsx[22m
+[2m11:22:55[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layouts/app/index.jsx[22m
+[2m11:23:12[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layouts/app/index.jsx[22m
+C:\Users\camila.soares\Desktop\workflow-app\src\layouts\app\index.jsx: Unexpected token, expected "}" (245:78)
+
+  243 |           </NavLink>
+  244 |           <SubMenuCadastros /> */}
+> 245 |           {session && session.permissao.id === 1 && ession.permissao.id === 1 session.permissao.id !== undefined && ( 
+      |                                                                               ^
+  246 |             <>
+  247 |               <NavLink to='/licitacoes'>
+  248 |                 <ListItemButton>
+[2m11:23:12[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\camila.soares\Desktop\workflow-app\src\layouts\app\index.jsx: Unexpected token, expected "}" (245:78)
+
+  243 |           </NavLink>
+  244 |           <SubMenuCadastros /> */}
+> 245 |           {session && session.permissao.id === 1 && ession.permissao.id === 1 session.permissao.id !== undefined && ( 
+      |                                                                               ^
+  246 |             <>
+  247 |               <NavLink to='/licitacoes'>
+  248 |                 <ListItemButton>[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/camila.soares/Desktop/workflow-app/src/layouts/app/index.jsx[39m:245:78
+[33m  249|                    <ListItemIcon>
+  250|                      <WorkIcon color='primary' />
+  251|                    </ListItemIcon>
+     |                                  ^
+  252|                    <ListItemText primary='Processos Licitatórios' />
+  253|                  </ListItemButton>[39m
+      at constructor (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:348:19)
+      at JSXParserMixin.raise (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:3202:19)
+      at JSXParserMixin.unexpected (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:3232:16)
+      at JSXParserMixin.expect (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:3569:28)
+      at JSXParserMixin.jsxParseExpressionContainer (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6781:10)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6855:36)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6842:32)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6842:32)
+      at JSXParserMixin.jsxParseElement (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6899:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6911:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:39
+      at JSXParserMixin.allowInAnd (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12229:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11462:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11113:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6916:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10533:23)
+      at C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10529:39
+      at JSXParserMixin.allowInAnd (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12224:16)
+      at JSXParserMixin.parseExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10529:17)
+      at JSXParserMixin.parseReturnStatement (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12948:28)
+      at JSXParserMixin.parseStatementContent (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12566:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12533:17)
+      at JSXParserMixin.parseStatementListItem (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12513:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:13134:61)
+      at JSXParserMixin.parseBlockBody (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:13127:10)
+      at JSXParserMixin.parseBlock (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:13115:10)
+      at JSXParserMixin.parseFunctionBody (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11896:24)
+      at JSXParserMixin.parseArrowExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11871:10)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11474:12)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11113:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6916:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+[2m11:23:13[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layouts/app/index.jsx[22m
+C:\Users\camila.soares\Desktop\workflow-app\src\layouts\app\index.jsx: Unexpected token, expected "}" (245:79)
+
+  243 |           </NavLink>
+  244 |           <SubMenuCadastros /> */}
+> 245 |           {session && session.permissao.id === 1 && session.permissao.id === 1 session.permissao.id !== undefined && ( 
+      |                                                                                ^
+  246 |             <>
+  247 |               <NavLink to='/licitacoes'>
+  248 |                 <ListItemButton>
+[2m11:23:13[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\camila.soares\Desktop\workflow-app\src\layouts\app\index.jsx: Unexpected token, expected "}" (245:79)
+
+  243 |           </NavLink>
+  244 |           <SubMenuCadastros /> */}
+> 245 |           {session && session.permissao.id === 1 && session.permissao.id === 1 session.permissao.id !== undefined && ( 
+      |                                                                                ^
+  246 |             <>
+  247 |               <NavLink to='/licitacoes'>
+  248 |                 <ListItemButton>[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/camila.soares/Desktop/workflow-app/src/layouts/app/index.jsx[39m:245:79
+[33m  249|                    <ListItemIcon>
+  250|                      <WorkIcon color='primary' />
+  251|                    </ListItemIcon>
+     |                                  ^
+  252|                    <ListItemText primary='Processos Licitatórios' />
+  253|                  </ListItemButton>[39m
+      at constructor (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:348:19)
+      at JSXParserMixin.raise (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:3202:19)
+      at JSXParserMixin.unexpected (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:3232:16)
+      at JSXParserMixin.expect (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:3569:28)
+      at JSXParserMixin.jsxParseExpressionContainer (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6781:10)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6855:36)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6842:32)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6842:32)
+      at JSXParserMixin.jsxParseElement (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6899:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6911:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:39
+      at JSXParserMixin.allowInAnd (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12229:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11462:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11113:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6916:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10533:23)
+      at C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10529:39
+      at JSXParserMixin.allowInAnd (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12224:16)
+      at JSXParserMixin.parseExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10529:17)
+      at JSXParserMixin.parseReturnStatement (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12948:28)
+      at JSXParserMixin.parseStatementContent (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12566:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12533:17)
+      at JSXParserMixin.parseStatementListItem (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12513:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:13134:61)
+      at JSXParserMixin.parseBlockBody (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:13127:10)
+      at JSXParserMixin.parseBlock (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:13115:10)
+      at JSXParserMixin.parseFunctionBody (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11896:24)
+      at JSXParserMixin.parseArrowExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11871:10)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11474:12)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11113:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6916:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+[2m11:23:16[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layouts/app/index.jsx[22m
+[2m11:23:25[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layouts/app/index.jsx[22m
+[2m11:23:25[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\camila.soares\Desktop\workflow-app\src\layouts\app\index.jsx: Unexpected token, expected "}" (245:78)
+
+  243 |           </NavLink>
+  244 |           <SubMenuCadastros /> */}
+> 245 |           {session && session.permissao.id === 1 && ession.permissao.id === 1 session.permissao.id !== undefined && ( 
+      |                                                                               ^
+  246 |             <>
+  247 |               <NavLink to='/licitacoes'>
+  248 |                 <ListItemButton>[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/camila.soares/Desktop/workflow-app/src/layouts/app/index.jsx[39m:245:78
+[33m  249|                    <ListItemIcon>
+  250|                      <WorkIcon color='primary' />
+  251|                    </ListItemIcon>
+     |                                  ^
+  252|                    <ListItemText primary='Processos Licitatórios' />
+  253|                  </ListItemButton>[39m
+      at constructor (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:348:19)
+      at JSXParserMixin.raise (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:3202:19)
+      at JSXParserMixin.unexpected (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:3232:16)
+      at JSXParserMixin.expect (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:3569:28)
+      at JSXParserMixin.jsxParseExpressionContainer (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6781:10)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6855:36)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6842:32)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6842:32)
+      at JSXParserMixin.jsxParseElement (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6899:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6911:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:39
+      at JSXParserMixin.allowInAnd (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12229:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11462:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11113:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6916:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10533:23)
+      at C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10529:39
+      at JSXParserMixin.allowInAnd (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12224:16)
+      at JSXParserMixin.parseExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10529:17)
+      at JSXParserMixin.parseReturnStatement (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12948:28)
+      at JSXParserMixin.parseStatementContent (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12566:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12533:17)
+      at JSXParserMixin.parseStatementListItem (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12513:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:13134:61)
+      at JSXParserMixin.parseBlockBody (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:13127:10)
+      at JSXParserMixin.parseBlock (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:13115:10)
+      at JSXParserMixin.parseFunctionBody (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11896:24)
+      at JSXParserMixin.parseArrowExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11871:10)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11474:12)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11113:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6916:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+[2m11:23:27[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layouts/app/index.jsx[22m
+[2m11:23:27[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\camila.soares\Desktop\workflow-app\src\layouts\app\index.jsx: Unexpected token, expected "}" (245:79)
+
+  243 |           </NavLink>
+  244 |           <SubMenuCadastros /> */}
+> 245 |           {session && session.permissao.id === 1 && session.permissao.id === 2 session.permissao.id !== undefined && ( 
+      |                                                                                ^
+  246 |             <>
+  247 |               <NavLink to='/licitacoes'>
+  248 |                 <ListItemButton>[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/camila.soares/Desktop/workflow-app/src/layouts/app/index.jsx[39m:245:79
+[33m  249|                    <ListItemIcon>
+  250|                      <WorkIcon color='primary' />
+  251|                    </ListItemIcon>
+     |                                  ^
+  252|                    <ListItemText primary='Processos Licitatórios' />
+  253|                  </ListItemButton>[39m
+      at constructor (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:348:19)
+      at JSXParserMixin.raise (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:3202:19)
+      at JSXParserMixin.unexpected (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:3232:16)
+      at JSXParserMixin.expect (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:3569:28)
+      at JSXParserMixin.jsxParseExpressionContainer (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6781:10)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6855:36)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6842:32)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6842:32)
+      at JSXParserMixin.jsxParseElement (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6899:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6911:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:39
+      at JSXParserMixin.allowInAnd (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12229:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11462:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11113:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6916:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10533:23)
+      at C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10529:39
+      at JSXParserMixin.allowInAnd (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12224:16)
+      at JSXParserMixin.parseExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10529:17)
+      at JSXParserMixin.parseReturnStatement (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12948:28)
+      at JSXParserMixin.parseStatementContent (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12566:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12533:17)
+      at JSXParserMixin.parseStatementListItem (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12513:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:13134:61)
+      at JSXParserMixin.parseBlockBody (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:13127:10)
+      at JSXParserMixin.parseBlock (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:13115:10)
+      at JSXParserMixin.parseFunctionBody (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11896:24)
+      at JSXParserMixin.parseArrowExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11871:10)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11474:12)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11113:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6916:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+[2m11:23:30[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layouts/app/index.jsx[22m
+[2m11:23:53[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layouts/app/index.jsx[22m
+[2m11:24:00[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layouts/app/index.jsx[22m
+[2m11:24:01[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layouts/app/index.jsx[22m
+[2m11:24:38[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layouts/app/index.jsx[22m
+[2m11:24:52[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layouts/app/index.jsx[22m
+[2m11:24:57[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layouts/app/index.jsx[22m
+[2m11:24:59[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layouts/app/index.jsx[22m
+[2m11:25:21[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layouts/app/index.jsx[22m
+[2m11:25:40[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layouts/app/index.jsx[22m
+[2m11:25:41[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layouts/app/index.jsx[22m
+[2m11:25:43[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/layouts/app/index.jsx[22m
+[2m11:29:14[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/drawer_view/index.jsx[22m
+[2m11:29:16[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/drawer_view/index.jsx[22m
+[2m11:29:17[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/drawer_view/index.jsx[22m
+[2m11:29:19[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/drawer_view/index.jsx[22m
+[2m11:29:23[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/drawer_view/index.jsx[22m
+[2m11:29:25[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/drawer_view/index.jsx[22m
+[2m11:29:32[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/drawer_view/index.jsx[22m
+[2m11:29:33[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/drawer_view/index.jsx[22m
+[2m11:29:39[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/drawer_view/index.jsx[22m
+[2m11:33:32[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m11:33:35[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m11:33:44[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m11:34:02[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m11:34:19[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m11:34:20[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m11:34:27[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m11:34:54[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m11:34:55[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m11:34:55[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\camila.soares\Desktop\workflow-app\src\pages\licitacoes\components\modal_atualizarEtapasProjeto\index.jsx: Unexpected token, expected "..." (174:50)
+
+  172 |                         listaDepartamento.map((departamento) => (
+  173 |                           <MenuItem key={departamento.id} value={departamento.id}>
+> 174 |                         {departamento.nome} -  <b{departamento.secretaria.sigla}
+      |                                                   ^
+  175 |                           </MenuItem>
+  176 |                         ))}
+  177 |                     </TextField>[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/camila.soares/Desktop/workflow-app/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[39m:174:50
+[33m  178|                    );
+  179|                  }}
+  180|                />
+     |     ^
+  181|              </Grid>
+  182|              <Grid item xs={12} sm={12} md={12}>[39m
+      at constructor (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:348:19)
+      at JSXParserMixin.raise (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:3202:19)
+      at JSXParserMixin.unexpected (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:3232:16)
+      at JSXParserMixin.expect (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:3569:28)
+      at JSXParserMixin.jsxParseAttribute (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6789:12)
+      at JSXParserMixin.jsxParseOpeningElementAfterName (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6811:28)
+      at JSXParserMixin.jsxParseOpeningElementAt (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6806:17)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6830:33)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6842:32)
+      at JSXParserMixin.jsxParseElement (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6899:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6911:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:39
+      at JSXParserMixin.allowInAnd (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12229:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11462:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11113:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6916:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at JSXParserMixin.parseFunctionBody (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11889:24)
+      at JSXParserMixin.parseArrowExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11871:10)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11474:12)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11113:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6916:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:39
+      at JSXParserMixin.allowInAnd (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12229:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:17)
+      at JSXParserMixin.parseExprListItem (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11981:18)
+      at JSXParserMixin.parseCallExpressionArguments (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11036:22)
+      at JSXParserMixin.parseCoverCallAndAsyncArrowHead (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10946:29)
+      at JSXParserMixin.parseSubscript (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10881:19)
+[2m11:34:56[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m11:35:03[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m11:35:22[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m11:35:22[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\camila.soares\Desktop\workflow-app\src\pages\licitacoes\components\modal_atualizarEtapasProjeto\index.jsx: Expected corresponding JSX closing tag for <MenuItem>. (174:44)
+
+  172 |                         listaDepartamento.map((departamento) => (
+  173 |                           <MenuItem key={departamento.id} value={departamento.id}>
+> 174 |                         {departamento.nome} </b>
+      |                                             ^
+  175 |                           </MenuItem>
+  176 |                         ))}
+  177 |                     </TextField>[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/camila.soares/Desktop/workflow-app/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[39m:174:44
+[33m  179|                  }}
+  180|                />
+  181|              </Grid>
+     |              ^
+  182|              <Grid item xs={12} sm={12} md={12}>
+  183|                <Controller[39m
+      at constructor (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:348:19)
+      at JSXParserMixin.raise (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:3202:19)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6874:16)
+      at JSXParserMixin.jsxParseElement (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6899:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6911:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:39
+      at JSXParserMixin.allowInAnd (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12229:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11462:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11113:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6916:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at JSXParserMixin.parseFunctionBody (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11889:24)
+      at JSXParserMixin.parseArrowExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11871:10)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11474:12)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11113:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6916:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:39
+      at JSXParserMixin.allowInAnd (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12229:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:17)
+      at JSXParserMixin.parseExprListItem (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11981:18)
+      at JSXParserMixin.parseCallExpressionArguments (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11036:22)
+      at JSXParserMixin.parseCoverCallAndAsyncArrowHead (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10946:29)
+      at JSXParserMixin.parseSubscript (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10881:19)
+      at JSXParserMixin.parseSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10852:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10843:17)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOpBaseRightExpr (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10729:34)
+[2m11:35:23[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m11:35:25[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m11:35:25[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\camila.soares\Desktop\workflow-app\src\pages\licitacoes\components\modal_atualizarEtapasProjeto\index.jsx: Expected corresponding JSX closing tag for <b>. (175:26)
+
+  173 |                           <MenuItem key={departamento.id} value={departamento.id}>
+  174 |                        -  <b>{departamento.secretaria.sigla} {departamento.nome} 
+> 175 |                           </MenuItem>
+      |                           ^
+  176 |                         ))}
+  177 |                     </TextField>
+  178 |                   );[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/camila.soares/Desktop/workflow-app/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[39m:175:26
+[33m  180|                />
+  181|              </Grid>
+  182|              <Grid item xs={12} sm={12} md={12}>
+     |                          ^
+  183|                <Controller
+  184|                  name='statusId'[39m
+      at constructor (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:348:19)
+      at JSXParserMixin.raise (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:3202:19)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6874:16)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6842:32)
+      at JSXParserMixin.jsxParseElement (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6899:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6911:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:39
+      at JSXParserMixin.allowInAnd (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12229:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11462:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11113:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6916:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at JSXParserMixin.parseFunctionBody (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11889:24)
+      at JSXParserMixin.parseArrowExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11871:10)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11474:12)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11113:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6916:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:39
+      at JSXParserMixin.allowInAnd (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12229:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:17)
+      at JSXParserMixin.parseExprListItem (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11981:18)
+      at JSXParserMixin.parseCallExpressionArguments (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11036:22)
+      at JSXParserMixin.parseCoverCallAndAsyncArrowHead (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10946:29)
+      at JSXParserMixin.parseSubscript (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10881:19)
+      at JSXParserMixin.parseSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10852:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10843:17)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+[2m11:35:27[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m11:35:29[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m11:35:57[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m11:35:59[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m11:36:00[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m11:41:54[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m11:42:04[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m11:42:39[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m11:43:19[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/drawer_view/index.jsx[22m
+[2m11:43:21[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/drawer_view/index.jsx[22m
+[2m11:44:46[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m11:45:42[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m11:46:04[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m11:46:07[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m11:46:11[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m11:46:19[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m11:46:21[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m11:46:57[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m11:59:00[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m11:59:02[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m12:43:37[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m12:47:09[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/lista/index.jsx[22m
+[2m12:53:39[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/lista/index.jsx[22m
+[2m12:54:24[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/lista/index.jsx[22m
+[2m12:54:54[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/lista/index.jsx[22m
+[2m12:55:04[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/lista/index.jsx[22m
+[2m12:55:21[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/lista/index.jsx[22m
+[2m12:55:23[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/lista/index.jsx[22m
+[2m12:55:32[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/lista/index.jsx[22m
+[2m12:56:03[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/lista/index.jsx[22m
+[2m12:56:07[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/lista/index.jsx[22m
+[2m12:56:15[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/lista/index.jsx[22m
+[2m12:56:19[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m12:56:22[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m12:56:26[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m12:56:26[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\camila.soares\Desktop\workflow-app\src\pages\solicitacoes\components\modal_concluir_projeto\index.jsx: Unexpected token (40:2)
+
+  38 |     ata: yup.boolean(),
+  39 |     situacao:
+> 40 |   })
+     |   ^
+  41 |   .required();
+  42 |
+  43 | const ModalConcluirProjeto = (props) => {[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/camila.soares/Desktop/workflow-app/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[39m:40:2
+[33m  41 |    .required();
+  42 |  
+  43 |  const ModalConcluirProjeto = (props) => {
+     |                      ^
+  44 |    const { handleFecharModalConcluirProjeto } = props;
+  45 |    const { handleFecharModalForm } = props;[39m
+      at constructor (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:348:19)
+      at JSXParserMixin.raise (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:3202:19)
+      at JSXParserMixin.unexpected (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:3232:16)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11233:16)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6916:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:39
+      at JSXParserMixin.allowInAnd (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12229:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:17)
+      at JSXParserMixin.parseObjectProperty (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11745:83)
+      at JSXParserMixin.parseObjPropValue (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11772:100)
+      at JSXParserMixin.parsePropertyDefinition (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11706:17)
+      at JSXParserMixin.parseObjectLike (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11621:21)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11131:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6916:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:39
+      at JSXParserMixin.allowInAnd (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12229:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:17)
+      at JSXParserMixin.parseExprListItem (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11981:18)
+      at JSXParserMixin.parseCallExpressionArguments (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11036:22)
+      at JSXParserMixin.parseCoverCallAndAsyncArrowHead (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10946:29)
+      at JSXParserMixin.parseSubscript (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10881:19)
+      at JSXParserMixin.parseSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10852:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10843:17)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:39
+      at JSXParserMixin.allowInAnd (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12224:16)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:17)
+      at JSXParserMixin.parseVar (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:13204:91)
+      at JSXParserMixin.parseVarStatement (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:13045:10)
+      at JSXParserMixin.parseStatementContent (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12628:23)
+      at JSXParserMixin.parseStatementLike (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12533:17)
+[2m12:56:28[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m12:56:28[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\camila.soares\Desktop\workflow-app\src\pages\solicitacoes\components\modal_concluir_projeto\index.jsx: Unexpected token (40:2)
+
+  38 |     ata: yup.boolean(),
+  39 |     situacao: yup.
+> 40 |   })
+     |   ^
+  41 |   .required();
+  42 |
+  43 | const ModalConcluirProjeto = (props) => {[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/camila.soares/Desktop/workflow-app/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[39m:40:2
+[33m  41 |    .required();
+  42 |  
+  43 |  const ModalConcluirProjeto = (props) => {
+     |                      ^
+  44 |    const { handleFecharModalConcluirProjeto } = props;
+  45 |    const { handleFecharModalForm } = props;[39m
+      at constructor (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:348:19)
+      at JSXParserMixin.raise (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:3202:19)
+      at JSXParserMixin.unexpected (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:3232:16)
+      at JSXParserMixin.parseIdentifierName (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12004:12)
+      at JSXParserMixin.parseIdentifier (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11987:23)
+      at JSXParserMixin.parseMember (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10908:28)
+      at JSXParserMixin.parseSubscript (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10885:21)
+      at JSXParserMixin.parseSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10852:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10843:17)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:39
+      at JSXParserMixin.allowInAnd (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12229:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:17)
+      at JSXParserMixin.parseObjectProperty (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11745:83)
+      at JSXParserMixin.parseObjPropValue (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11772:100)
+      at JSXParserMixin.parsePropertyDefinition (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11706:17)
+      at JSXParserMixin.parseObjectLike (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11621:21)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11131:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6916:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:39
+      at JSXParserMixin.allowInAnd (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12229:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:17)
+      at JSXParserMixin.parseExprListItem (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11981:18)
+      at JSXParserMixin.parseCallExpressionArguments (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11036:22)
+      at JSXParserMixin.parseCoverCallAndAsyncArrowHead (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10946:29)
+      at JSXParserMixin.parseSubscript (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10881:19)
+      at JSXParserMixin.parseSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10852:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10843:17)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:39
+      at JSXParserMixin.allowInAnd (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12224:16)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:17)
+      at JSXParserMixin.parseVar (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:13204:91)
+[2m12:57:11[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:02:00[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:02:02[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:02:04[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:03:33[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:06:49[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:06:52[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:09:26[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:09:26[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\camila.soares\Desktop\workflow-app\src\pages\solicitacoes\components\modal_concluir_projeto\index.jsx: Missing semicolon. (89:13)
+
+  87 |     setLoading(true);
+  88 |     axiosApi
+> 89 |       .import PropTypes from 'prop-types';
+     |              ^
+  90 | import { useForm, Controller } from 'react-hook-form';
+  91 | import * as yup from 'yup';
+  92 | import { yupResolver } from '@hookform/resolvers/yup';[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/camila.soares/Desktop/workflow-app/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[39m:89:13
+[33m  89 |        .import PropTypes from 'prop-types';
+  90 |  import { useForm, Controller } from 'react-hook-form';
+  91 |  import * as yup from 'yup';
+     |     ^
+  92 |  import { yupResolver } from '@hookform/resolvers/yup';
+  93 |  import Box from '@mui/material/Box';[39m
+      at constructor (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:348:19)
+      at JSXParserMixin.raise (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:3202:19)
+      at JSXParserMixin.semicolon (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:3564:10)
+      at JSXParserMixin.parseExpressionStatement (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:13103:10)
+      at JSXParserMixin.parseStatementContent (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12686:19)
+      at JSXParserMixin.parseStatementLike (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12533:17)
+      at JSXParserMixin.parseStatementListItem (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12513:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:13134:61)
+      at JSXParserMixin.parseBlockBody (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:13127:10)
+      at JSXParserMixin.parseBlock (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:13115:10)
+      at JSXParserMixin.parseFunctionBody (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11896:24)
+      at JSXParserMixin.parseArrowExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11871:10)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11474:12)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11113:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6916:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:39
+      at JSXParserMixin.allowInAnd (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12224:16)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:17)
+      at JSXParserMixin.parseVar (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:13204:91)
+      at JSXParserMixin.parseVarStatement (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:13045:10)
+      at JSXParserMixin.parseStatementContent (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12628:23)
+      at JSXParserMixin.parseStatementLike (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12533:17)
+      at JSXParserMixin.parseStatementListItem (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12513:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:13134:61)
+      at JSXParserMixin.parseBlockBody (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:13127:10)
+      at JSXParserMixin.parseBlock (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:13115:10)
+      at JSXParserMixin.parseFunctionBody (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11896:24)
+      at JSXParserMixin.parseArrowExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11871:10)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11474:12)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11113:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6916:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:39
+      at JSXParserMixin.allowInAnd (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12224:16)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:17)
+      at JSXParserMixin.parseVar (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:13204:91)
+      at JSXParserMixin.parseVarStatement (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:13045:10)
+[2m13:09:31[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:09:38[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:10:37[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:10:52[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:11:03[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:11:28[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:11:49[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:11:53[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:11:57[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:11:59[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:12:02[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:12:06[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:12:10[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:15:20[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/lista/index.jsx[22m
+[2m13:15:32[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/lista/index.jsx[22m
+[2m13:17:29[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:17:38[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:17:55[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:18:10[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:20:01[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:20:03[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:20:05[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:20:11[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:20:15[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:20:17[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:23:07[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/lista/index.jsx[22m
+[2m13:24:24[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:24:24[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\camila.soares\Desktop\workflow-app\src\pages\solicitacoes\components\modal_concluir_projeto\index.jsx: Unterminated string constant. (64:16)
+
+  62 |       descricao: '',
+  63 |       observacao: '',
+> 64 |       valor: 0, '
+     |                 ^
+  65 |       tipoProjetoId:',
+  66 |       ata: false,
+  67 |       situacao: 'ATIVO'[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/camila.soares/Desktop/workflow-app/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[39m:64:16
+[33m  65 |        tipoProjetoId:',
+  66 |        ata: false,
+  67 |        situacao: 'ATIVO'
+     |                      ^
+  68 |      },
+  69 |    });[39m
+      at constructor (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:348:19)
+      at JSXParserMixin.raise (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:3202:19)
+      at Object.unterminated (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:2205:20)
+      at readStringContents (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:1943:16)
+      at JSXParserMixin.readString (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:3088:9)
+      at JSXParserMixin.getTokenFromCode (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:2816:14)
+      at JSXParserMixin.getTokenFromCode (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6949:11)
+      at JSXParserMixin.nextToken (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:2326:10)
+      at JSXParserMixin.next (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:2237:10)
+      at JSXParserMixin.eat (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:2241:12)
+      at JSXParserMixin.expect (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:3569:10)
+      at JSXParserMixin.parseObjectLike (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11611:14)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11131:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6916:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:39
+      at JSXParserMixin.allowInAnd (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12229:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:17)
+      at JSXParserMixin.parseObjectProperty (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11745:83)
+      at JSXParserMixin.parseObjPropValue (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11772:100)
+      at JSXParserMixin.parsePropertyDefinition (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11706:17)
+      at JSXParserMixin.parseObjectLike (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11621:21)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11131:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:6916:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10839:23)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10641:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10618:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10579:21)
+      at C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:39
+      at JSXParserMixin.allowInAnd (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:12229:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10549:17)
+      at JSXParserMixin.parseExprListItem (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11981:18)
+      at JSXParserMixin.parseCallExpressionArguments (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:11036:22)
+      at JSXParserMixin.parseCoverCallAndAsyncArrowHead (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10946:29)
+      at JSXParserMixin.parseSubscript (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10881:19)
+      at JSXParserMixin.parseSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10852:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10843:17)
+      at JSXParserMixin.parseUpdate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10822:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10798:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10636:61)
+      at JSXParserMixin.parseExprOps (C:\Users\camila.soares\Desktop\workflow-app\node_modules\@babel\parser\lib\index.js:10641:23)
+[2m13:24:28[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:28:04[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/lista/index.jsx[22m
+[2m13:28:07[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/lista/index.jsx[22m
+[2m13:28:13[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/lista/index.jsx[22m
+[2m13:29:49[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m13:29:53[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m13:29:56[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/licitacoes/components/modal_atualizarEtapasProjeto/index.jsx[22m
+[2m13:35:15[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:36:01[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:36:38[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/lista/index.jsx[22m
+[2m13:36:44[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:37:08[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:38:19[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/modal_concluir_projeto/index.jsx[22m
+[2m13:41:32[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/lista/index.jsx[22m
+[2m13:41:36[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/lista/index.jsx[22m
+[2m13:41:39[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/lista/index.jsx[22m
+[2m13:41:44[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/lista/index.jsx[22m
+[2m13:41:54[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/lista/index.jsx[22m
+[2m13:42:29[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/lista/index.jsx[22m
+[2m13:42:33[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/lista/index.jsx[22m
+[2m13:42:38[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/solicitacoes/components/lista/index.jsx[22m
+[2m13:44:41[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mindex.html[22m
