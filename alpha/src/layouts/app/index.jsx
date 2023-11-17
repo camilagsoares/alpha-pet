@@ -36,7 +36,6 @@ import KeyOutlinedIcon from '@mui/icons-material/KeyOutlined';
 import AccountBoxOutlinedIcon from '@mui/icons-material/AccountBoxOutlined';
 import { SubMenuCadastros, ModalFormAlterarSenha, ModalFormVisualizarPerfil } from '../../components';
 import { AuthContext } from '../../contexts/auth.context';
-import DownloadTable from '../../components/excelexport';
 
 const drawerWidth = 256;
 
@@ -180,9 +179,7 @@ const AppLayout = (props) => {
       </AppBar>
       <Dialog open={openRelatoriosDialog} onClose={handleCloseRelatoriosDialog} maxWidth='sm' fullWidth>
         <DialogTitle>Relatórios Workflow</DialogTitle>
-        <DialogContent dividers>
-          <DownloadTable />
-        </DialogContent>
+      
         <DialogActions>
           <Button onClick={handleCloseRelatoriosDialog} color='primary' variant='outlined'>
             Fechar
@@ -242,32 +239,13 @@ const AppLayout = (props) => {
             </ListItemButton>
           </NavLink>
           <SubMenuCadastros /> */}
-          {session && (session.permissao.id === 1 || session.permissao.id === 2 || session.id === 42 || session.id === 18 || session.id === 16) && session.permissao.id !== undefined && (
-            <>
-              <NavLink to='/licitacoes'>
-                <ListItemButton>
-                  <ListItemIcon>
-                    <WorkIcon color='primary' />
-                  </ListItemIcon>
-                  <ListItemText primary='Processos Licitatórios' />
-                </ListItemButton>
-              </NavLink>
-              {/* <SubMenuCadastros /> */}
-            </>
-          )}
+       
           {session && session.id === 1 && session.id !== undefined && (
             <>
               <SubMenuCadastros />
             </>
           )}
-          <List component='nav'>
-            <ListItemButton onClick={handleOpenRelatoriosDialog}>
-              <ListItemIcon>
-                <ViewList color='primary' />
-              </ListItemIcon>
-              <ListItemText primary='Relatórios Workflow' />
-            </ListItemButton>
-          </List>
+       
         </List>
       </Drawer>
       <Box

@@ -57,7 +57,7 @@ const LoginPage = () => {
   useEffect(() => {});
 
   return (
-    <Grid container component='main' sx={{ height: '100vh' }}>
+    <Grid container component='main' sx={{ height: '100vh' }} display='flex' justifyContent='center' alignItems='center'>
       {/* <Grid
         item
         xs={false}
@@ -82,20 +82,7 @@ const LoginPage = () => {
             justifyContent: 'center',
           }}
         >
-          <Box
-            xs={12}
-            sm={4}
-            md={7}
-            width={320}
-            height={109}
-            marginY={8}
-            sx={{
-              backgroundImage: 'url(logo-itajuba.png)',
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }}
-          />
+
           <Typography component='h1' variant='h5' fontWeight={700}>
             Alpha pet
           </Typography>

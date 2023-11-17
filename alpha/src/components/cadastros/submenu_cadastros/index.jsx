@@ -76,14 +76,7 @@ const SubMenuCadastros = () => {
             <ListItemText>Tipo Projeto</ListItemText>
           </MenuItem>
         </NavLink>
-        <NavLink to='/permissao'>
-          <MenuItem onClick={handleAbrirModalCadastroAdmin}>
-            <ListItemIcon>
-              <VerticalSplitOutlinedIcon fontSize='small' />
-            </ListItemIcon>
-            <ListItemText>Permissão</ListItemText>
-          </MenuItem>
-        </NavLink>
+       
         <NavLink to='/status'>
           <MenuItem onClick={handleAbrirModalCadastroAdmin}>
             <ListItemIcon>

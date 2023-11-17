@@ -94,7 +94,6 @@ const Lista = (props) => {
   const { token, session } = useContext(AuthContext);
 
 
-  const isUsuarioCompras = session?.permissao.id === 2;
 
   const { projetosSelecionadoVisualizar } = props;
 
@@ -111,7 +110,6 @@ const Lista = (props) => {
     setPageNumber(0);
   }, [data]);
 
-  const verificaUsuario = isUsuarioCompras && session?.id !== 39;
 
 
   const dataIsValid = Array.isArray(data) && !isNaN(projectsPerPage);

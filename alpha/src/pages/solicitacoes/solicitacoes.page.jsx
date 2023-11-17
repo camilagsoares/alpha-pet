@@ -9,10 +9,7 @@ import Divider from '@mui/material/Divider';
 import Lista from './components/lista';
 import ModalForm from './components/modal_form';
 import { useState, useContext } from 'react';
-import DrawerView from './components/drawer_view';
-import ModalAtualizarEtapasProjeto from './components/modal_atualizarEtapasProjeto';
-import ModalAdicionarProcessoLicitatorio from './components/modal_adicionar_processo_licitatorio';
-import ModalEditarProjeto from './components/modal_editar_projeto';
+
 import InputAdornment from '@mui/material/InputAdornment';
 import { AuthContext } from "../../contexts/auth.context"
 import ModalConcluirProjeto from "./components/modal_concluir_projeto"
@@ -56,18 +53,9 @@ const SolicitacoesPage = () => {
 
   const { errors } = formState;
 
-  const [modalFormAberto, abrirFecharModalForm] = useState(false);
-  const [modalFormAtualizarEtapa, abrirFecharModalFormAtualizarEtapa] = useState(false);
-  const [modalFormConcluir, abrirFecharModalConcluir] = useState(false);
-  const [modalFormPrioridade, abrirFecharModalPrioridade] = useState(false);
 
-  const [modalFormAdicionarProcessoLicitatorio, abrirFecharModalFormAdicionarProcessoLicitatorio] = useState(false);
-  const [drawerViewAberto, abrirFecharDrawerView] = useState(false);
   const [projetosSelecionadoVisualizar, setProjetosSelecionadoVisualizar] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
-  const [editarProjetoAberto, abrirFecharEditarProjeto] = useState(false);
-  const [concluirProjetoAberto, abrirFecharConcluirProjeto] = useState(false)
-  const [proridadeProjetoAberto, abrirFecharPrioridadeProjeto] = useState(false)
 
   const handleFecharModalForm = () => abrirFecharModalForm(false);
   const handleAbrirModalForm = () => abrirFecharModalForm(true);
@@ -76,25 +64,6 @@ const SolicitacoesPage = () => {
     abrirFecharDrawerView(true);
     setProjetosSelecionadoVisualizar(idProjeto);
   };
-  const handleFecharDrawerView = () => abrirFecharDrawerView(false);
-
-  const handleFecharEditarProjeto = () => abrirFecharEditarProjeto(false);
-
-  const handleFecharConcluirProjeto = () => abrirFecharConcluirProjeto(false);
-
-  const handleFecharPrioridadeProjeto = () => abrirFecharModalPrioridade(false);
-
-  const handleFecharModalConcluirProjeto = () => abrirFecharModalConcluir(false);
-
-  const handleFecharModalAtualizarEtapaProjeto = () => abrirFecharModalFormAtualizarEtapa(false);
-
-  const handleAbrirModalAtualizarEtapaProjeto = (idProjeto) => {
-    setProjetosSelecionadoVisualizar(idProjeto);
-    abrirFecharModalFormAtualizarEtapa(true);
-  };
-
-  const handleFecharAdcPLic = () => abrirFecharModalFormAdicionarProcessoLicitatorio(false);
-  const handleAbrirAdcPLic = () => abrirFecharModalFormAdicionarProcessoLicitatorio(true);
 
   const handleSearchTermChange = (term) => {
     setSearchTerm(term);
@@ -560,84 +529,7 @@ const SolicitacoesPage = () => {
         selectedTipoProjeto={selectedTipoProjeto}
       />
 
-      {modalFormAberto && <ModalForm handleFecharModalForm={handleFecharModalForm}
-      //  handleFecharModalAtualizarEtapaProjeto={handleFecharModalAtualizarEtapaProjeto}
-      />}
-
-      {modalFormAtualizarEtapa && (
-        <ModalAtualizarEtapasProjeto
-          handleFecharModalForm={handleFecharModalForm}
-          handleFecharModalAtualizarEtapaProjeto={handleFecharModalAtualizarEtapaProjeto}
-          projetosSelecionadoVisualizar={projetosSelecionadoVisualizar}
-          //teste
-          // etapasProjeto={etapasProjeto}
-          // setEtapasProjeto={setEtapasProjeto}
-          // atualizarEtapasProjeto={atualizarEtapasProjeto}
-          onNovaEtapaCriada={atualizarEtapasProjeto}
-
-        />
-      )}
-
-      {modalFormAdicionarProcessoLicitatorio && (
-        <ModalAdicionarProcessoLicitatorio
-          clickedProjectIds={clickedProjectIds}
-          handleFecharAdcPLic={handleFecharAdcPLic}
-          handleIncluirClick={handleIncluirClick}
-          handleFecharModalForm={handleFecharModalForm}
-
-          //teste
-          selectedProjectIdSonner={selectedProjectIdSonner}
-        />
-      )}
-
-      {drawerViewAberto && (
-        <DrawerView
-          handleFecharDrawerView={handleFecharDrawerView}
-          projetosSelecionadoVisualizar={projetosSelecionadoVisualizar}
-          handleAbrirModalAtualizarEtapaProjeto={handleAbrirModalAtualizarEtapaProjeto}
-          handleAbrirModalConcluirProjeto={handleAbrirModalConcluirProjeto}
-
-          //
-          setConclusionDate={setConclusionDate}
-          //teste
-          // etapas={etapas}
-          // etapasProjeto={etapasProjeto}
-          etapasProjeto={etapasProjeto}
-
-        />
-      )}
-
-      {editarProjetoAberto && (
-        <ModalEditarProjeto
-          handleFecharEditarProjeto={handleFecharEditarProjeto}
-          projetosSelecionadoVisualizar={projetosSelecionadoVisualizar}
-          handleAbrirModalAtualizarEtapaProjeto={handleAbrirModalAtualizarEtapaProjeto}
-          handleAbrirModalConcluirProjeto={handleAbrirModalConcluirProjeto}
-        />
-      )}
-
-      {modalFormConcluir && (
-        <ModalConcluirProjeto
-          handleFecharConcluirProjeto={handleFecharConcluirProjeto}
-          projetosSelecionadoVisualizar={projetosSelecionadoVisualizar}
-          handleAbrirModalAtualizarEtapaProjeto={handleAbrirModalAtualizarEtapaProjeto}
-          handleAbrirModalConcluirProjeto={handleAbrirModalConcluirProjeto}
-          handleFecharModalConcluirProjeto={handleFecharModalConcluirProjeto}
-
-          //teste para deixar borda verde
-          setConclusionDate={setConclusionDate}
-        // setConcludedProjects={setConcludedProjects}
-        />
-      )}
-
-      {/* LÓGICA MODAL PRIORIDADE PROJETO */}
-      {modalFormPrioridade && (
-        <ModalPrioridadeProjeto
-          handleFecharPrioridadeProjeto={handleFecharPrioridadeProjeto}
-          projetosSelecionadoVisualizar={projetosSelecionadoVisualizar}
-          handleAbrirModalPrioridadeProjeto={handleAbrirModalPrioridadeProjeto}
-        />
-      )}
+  
     </Box>
   );
 };

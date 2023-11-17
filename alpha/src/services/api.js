@@ -8,7 +8,7 @@ const tokenInStorage = localStorage.getItem('token');
 
 const axiosApi = axios.create({
   // baseURL: `http://177.200.96.132:5477/api`,
-  baseURL: `http://10.1.0.187:3000/api`,
+  baseURL: `http://10.1.0.187:3003/api`,
   headers: {
     Authorization: `Bearer ${tokenInStorage}`,
     'Content-Type': 'application/json',
@@ -29,7 +29,7 @@ const useApiLogin = () => {
     setError(null);
     setLoading(true);
     try {
-      const response = await axios.post(`http://10.1.0.187:3000/api/auth/login`, payload, {
+      const response = await axios.post(`http://10.1.0.187:3003/api/auth/login`, payload, {
         headers: {
           'Content-Type': 'application/json',
         },
@@ -99,7 +99,7 @@ const useApiRequestGet = (path, payload) => {
   const fetchData = async () => {
     try {
       setLoading(true);
-      const response = await axios.get(`http://10.1.0.187:3000/api${path}`, {
+      const response = await axios.get(`http://10.1.0.187:3003/api${path}`, {
         data: payload,
         headers: configHeaders(),
       });
@@ -133,16 +133,16 @@ const useApiRequestSubmit = (method = 'post' | 'delete' | 'put', path, callback)
       setLoading(true);
       const response = await axios({
         method,
-        url: `http://10.1.0.187:3000/api${path}`,
+        url: `http://10.1.0.187:3003/api${path}`,
       });
 
       setData(response.data);
       // window.location.reload()
 
       // Chame o callback após a conclusão bem-sucedida do POST ou PUT
-      // if (callback) {
-      //   callback(response.data);
-      // }
+      if (callback) {
+        callback(response.data);
+      }
       
     } catch (error) {
       toast(error.response.data.message, {
@@ -159,4 +159,4 @@ const useApiRequestSubmit = (method = 'post' | 'delete' | 'put', path, callback)
 
 
 
-export { useApiLogin, useApiRequestGet, useApiRequestSubmit, axiosApi };
+export { useApiLogin, useApiRequestGet, useApiRequestSubmit, axiosApi }; 
