@@ -10,8 +10,6 @@ import Lista from './components/lista';
 import ModalForm from './components/modal_form';
 import { useState, useContext } from 'react';
 import DrawerView from './components/drawer_view';
-import ModalAtualizarEtapasProjeto from './components/modal_atualizarEtapasProjeto';
-import ModalAdicionarProcessoLicitatorio from './components/modal_adicionar_processo_licitatorio';
 import ModalEditarProjeto from './components/modal_editar_projeto';
 import InputAdornment from '@mui/material/InputAdornment';
 import { AuthContext } from "../../contexts/auth.context"
@@ -349,10 +347,7 @@ const SolicitacoesPage = () => {
           </Button>
        
         </Box>
-    
-      </Box>
-
-      <Grid item sx={{ marginTop: '4px' }}>
+        <Grid item sx={{ marginTop: '4px' }}>
         <TextField
           size="small"
           variant="outlined"
@@ -390,6 +385,9 @@ const SolicitacoesPage = () => {
           }}
         />
       </Grid>
+      </Box>
+
+   
      
       <Lista
         searchTerm={searchTerm}
