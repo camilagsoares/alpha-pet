@@ -87,6 +87,13 @@ const ModalForm = (props) => {
       });
   };
 
+  
+  const {
+    data: procedimentos,
+    loading: loadingProcedimentos,
+    // error: errorDepartamento,
+  } = useApiRequestGet('/procedimentos');
+
 
  
   return (
@@ -166,7 +173,7 @@ const ModalForm = (props) => {
                 // onChange={(e) => handleValorChange(e.target.value)}
               />
             </Grid>
-            <Grid item xs={12} sm={12} md={12}>
+            {/* <Grid item xs={12} sm={12} md={12}>
               <TextField
                 {...register('procedimentoId')}
                 fullWidth
@@ -177,8 +184,54 @@ const ModalForm = (props) => {
                 // helperText={valorError ? 'Não coloque ponto ou vírgula no campo de valor,se precisar arredonde' : errors.valor?.message}
                 // onChange={(e) => handleValorChange(e.target.value)}
               />
+            </Grid> */}
+           <Grid item xs={12} sm={12} md={12}>
+              {!loadingProcedimentos && procedimentos && procedimentos.length ? (
+                <Controller
+                  name='procedimentoId'
+                  control={control}
+                  render={({ field }) => {
+                    const { onChange, name, onBlur, value, ref } = field;
+                    const selectedStatusId = value || ''; 
+                    return (
+                      <TextField
+                        required
+                        ref={ref}
+                        select
+                        fullWidth
+                        key='statusId'
+                        variant='outlined'
+                        onBlur={onBlur}
+                        name={name}
+                        label='Status'
+                        value={selectedStatusId}
+                        onChange={onChange}
+                        // teste status
+
+                        error={!!errors.procedimentoId}
+                        helperText={errors.procedimentoId?.message}
+                      >
+
+                        <MenuItem disabled value=''>
+                          <em>Nenhuma</em>
+                        </MenuItem>
+                        {!loadingProcedimentos &&
+                          procedimentos &&
+                          procedimentos.length &&
+                          procedimentos.map((statusEtapa) => (
+                            <MenuItem key={statusEtapa.id} value={statusEtapa.id}>
+                              {statusEtapa.nome}
+                            </MenuItem>
+                          ))}
+                      </TextField>
+                    );
+                  }}
+                />
+              ) : (
+                <CircularProgress color="info" size={28} />
+              )}
+        
             </Grid>
-       
           </Grid>
         </DialogContent>
         <DialogActions>

@@ -61,9 +61,6 @@ const ModalFormVisualizarPerfil = (props) => {
             <Typography variant='h5' color='text.secondary'>
               {loading ? <Skeleton variant='text' sx={{ fontSize: '2rem', width: 272 }} /> : session.email}
             </Typography>
-            <Typography variant='body2' color='text.secondary'>
-              {loading ? <Skeleton variant='text' sx={{ fontSize: '1.375rem', width: 272 }} /> : session?.telefone}
-            </Typography>
           </Stack>
         </Box>
       </DialogContent>

@@ -65,7 +65,7 @@ const SubMenuCadastros = () => {
             <ListItemIcon>
               <DeskOutlinedIcon fontSize='small' />
             </ListItemIcon>
-            <ListItemText>Secretarias</ListItemText>
+            <ListItemText>Controle estoque</ListItemText>
           </MenuItem>
         </NavLink>
        
