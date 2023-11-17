@@ -28,8 +28,7 @@ import AlertTitle from '@mui/material/AlertTitle';
 const schema = yup
   .object({
     nome: yup.string().required('Campo obrigatorio'),
-    email: yup.string().required('Campo obrigatorio'),
-    senha: yup.string().required('Campo obrigatorio').min(5, 'Mínimo 5 caracteres'),
+ 
   })
   .required();
 
@@ -41,8 +40,7 @@ const ModalForm = (props) => {
     resolver: yupResolver(schema),
     defaultValues: {
       nome: '',
-      email: '',
-      senha: '',
+     
     },
   });
 
@@ -54,7 +52,7 @@ const ModalForm = (props) => {
   const handleCriarSecretaria = (data) => {
     setLoading(true);
     axiosApi
-      .post('/auth/usuarios', data)
+      .post('/procedimentos', data)
       .then(() => {
         //  toast('Projeto criado com sucesso', {
         //  type: 'success',
@@ -80,7 +78,7 @@ const ModalForm = (props) => {
     <Dialog disableEscapeKeyDown fullWidth open={true} onClose={handleFecharModalForm} maxWidth='sm'>
       <DialogTitle>
         <Stack direction='row' sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <Typography component='h5'>Criar Usuário</Typography>
+          <Typography component='h5'>Criar Procedimento</Typography>
           <IconButton
             edge='start'
             color='inherit'
@@ -106,28 +104,7 @@ const ModalForm = (props) => {
                 helperText={errors.nome?.message}
               />
             </Grid>
-            <Grid item xs={12} sm={12} md={8}>
-              <TextField
-                {...register('email')}
-                fullWidth
-                required
-                label='Email'
-                type='text'
-                error={!!errors.email}
-                helperText={errors.email?.message}
-              />
-            </Grid>
-            <Grid item xs={12} sm={12} md={12}>
-              <TextField
-                {...register('senha')}
-                fullWidth
-                required
-                label='Senha'
-                type='password'
-                error={!!errors.senha}
-                helperText={errors.senha?.message}
-              />
-            </Grid>
+         
 
             
             </Grid>

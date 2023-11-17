@@ -83,14 +83,11 @@ const Lista = (props) => {
   const { clickedProjectIds } = props;
   const { searchTerm } = props;
   const { filterByAta } = props;
-  const { data, loading } = useApiRequestGet('/projetos');
-  const { etapas } = useApiRequestGet('/etapas');
+  const { data, loading } = useApiRequestGet('/clientes');
   // console.log("dados projeto", data?.prioridadeProjeto)
   // console.log('Etapas Aqui', etapas)
   // console.log('projetos do useApiRequestGet', data);
-  localStorage.setItem('projetosData', JSON.stringify(data));
   //TESTE!
-  const { data: listaDptos, loading: loadingTiposProjeto } = useApiRequestGet('/departamentos');
   const { token, session } = useContext(AuthContext);
 
 
@@ -195,25 +192,21 @@ const Lista = (props) => {
                 )}
 
                 <StyledTableCell align='left' width={112}>
-                  N° Sonner
+                  Nome
                 </StyledTableCell>
-                <StyledTableCell width={192}>Descrição resumida</StyledTableCell>
                 <StyledTableCell align='left' width={180}>
-                  Departamento
+                  Telefone
                 </StyledTableCell>
                 <StyledTableCell align='left' width={196}>
-                  Tipo Solicitação
+                  Nome do Cachorro
+                </StyledTableCell>
+                <StyledTableCell align='left' width={96}>
+                  Observação
                 </StyledTableCell>
                 <StyledTableCell align='left' width={96}>
                   Valor
                 </StyledTableCell>
-                {session && (session.id === 1 || session.id === 56) && (
-                  <>
-                    <StyledTableCell align='left' width={46}>
-                      Prioridade
-                    </StyledTableCell>
-                  </>
-                )}
+               
 
                 <StyledTableCell align='center' width={96}>
                   <MenuOpen />
@@ -248,50 +241,23 @@ const Lista = (props) => {
                           </Button>
                         </StyledTableCell>
                       )}
-                      <StyledTableCell align="left" className={isUsuarioCompras ? '' : getBordaClasse(projeto) || verificaUsuario ? getBordaClasse(projeto) : ''}>
-                        {projeto?.idSonner}
+                    
+                      <StyledTableCell component="th" scope="row">
+                        {projeto?.nome}
+                      </StyledTableCell>
+                     
+                      <StyledTableCell component="th" scope="row">
+                        {projeto?.telefone}
                       </StyledTableCell>
                       <StyledTableCell component="th" scope="row">
-                        {projeto?.titulo}
+                        {projeto?.nomeCachorro}
                       </StyledTableCell>
-                      <StyledTableCell align="left">
-                        {projeto?.etapa[0]?.departamento?.secretaria?.sigla}  -&nbsp;
-                        {projeto?.etapa[0]?.departamento?.nome}
+                      <StyledTableCell component="th" scope="row">
+                        {projeto?.observacao}
                       </StyledTableCell>
-                      <StyledTableCell align="left">{projeto?.tipoProjeto?.nome}</StyledTableCell>
-                      <StyledTableCell align="left">{formatarValorToMonetario(projeto?.valor)}</StyledTableCell>
-
-                      {session && (session.id === 1 && !isUsuarioCompras || session.id === 56 && !isUsuarioCompras) && (
-                        <>
-                          <StyledTableCell align="left">
-                            <Tooltip title="Prioridade" arrow>
-                              {projeto?.prioridadeProjeto ? (
-                                <ThemeProvider theme={theme}>
-                                  <Button
-                                    startIcon={<ImportExportOutlinedIcon />}
-                                    variant='outlined'
-                                    color='secondary'
-                                    sx={{ marginRight: 1 }}
-                                    onClick={() => props.handleAbrirModalPrioridadeProjeto(projeto?.id)}
-                                  >
-                                    Reverter Prioridade
-                                  </Button>
-                                  </ThemeProvider>
-                                  ) : (
-                                  <Button
-                                    startIcon={<ImportExportOutlinedIcon />}
-                                    variant='outlined'
-                                    color='primary'
-                                    sx={{ marginRight: 1 }}
-                                    onClick={() => props.handleAbrirModalPrioridadeProjeto(projeto?.id)}
-                                  >
-                                    Definir prioridade
-                                  </Button>
-                              )}
-                                </Tooltip>
-                          </StyledTableCell>
-                        </>
-                      )}
+                      <StyledTableCell component="th" scope="row">
+                        {projeto?.valor}
+                      </StyledTableCell>
                       <StyledTableCell align="center">
                         <Tooltip title="Detalhes" arrow>
                           <IconButton
@@ -306,22 +272,7 @@ const Lista = (props) => {
                             <VisibilityOutlined fontSize="small" color="action" />
                           </IconButton>
                         </Tooltip>
-                        {(projeto.etapa[0]?.statusId === 4 && projeto.usuarioId === session?.id || session.id === 56 && !isUsuarioCompras) &&
-                          (
-                            <Tooltip title="Editar" arrow>
-                              <IconButton
-                                edge="start"
-                                color="inherit"
-                                aria-label="open modal edit register"
-                                onClick={() => {
-                                  props.handleAbrirEditarProjeto(projeto?.id);
-                                }}
-                                style={{ marginRight: '-22px' }}
-                              >
-                                <EditOutlined fontSize="small" color="action" />
-                              </IconButton>
-                            </Tooltip>
-                          )}
+                      
                       </StyledTableCell>
                     </StyledTableRow>
                   ))

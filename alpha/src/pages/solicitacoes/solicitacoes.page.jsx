@@ -9,7 +9,10 @@ import Divider from '@mui/material/Divider';
 import Lista from './components/lista';
 import ModalForm from './components/modal_form';
 import { useState, useContext } from 'react';
-
+import DrawerView from './components/drawer_view';
+import ModalAtualizarEtapasProjeto from './components/modal_atualizarEtapasProjeto';
+import ModalAdicionarProcessoLicitatorio from './components/modal_adicionar_processo_licitatorio';
+import ModalEditarProjeto from './components/modal_editar_projeto';
 import InputAdornment from '@mui/material/InputAdornment';
 import { AuthContext } from "../../contexts/auth.context"
 import ModalConcluirProjeto from "./components/modal_concluir_projeto"
@@ -53,9 +56,18 @@ const SolicitacoesPage = () => {
 
   const { errors } = formState;
 
+  const [modalFormAberto, abrirFecharModalForm] = useState(false);
+  const [modalFormAtualizarEtapa, abrirFecharModalFormAtualizarEtapa] = useState(false);
+  const [modalFormConcluir, abrirFecharModalConcluir] = useState(false);
+  const [modalFormPrioridade, abrirFecharModalPrioridade] = useState(false);
 
+  const [modalFormAdicionarProcessoLicitatorio, abrirFecharModalFormAdicionarProcessoLicitatorio] = useState(false);
+  const [drawerViewAberto, abrirFecharDrawerView] = useState(false);
   const [projetosSelecionadoVisualizar, setProjetosSelecionadoVisualizar] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
+  const [editarProjetoAberto, abrirFecharEditarProjeto] = useState(false);
+  const [concluirProjetoAberto, abrirFecharConcluirProjeto] = useState(false)
+  const [proridadeProjetoAberto, abrirFecharPrioridadeProjeto] = useState(false)
 
   const handleFecharModalForm = () => abrirFecharModalForm(false);
   const handleAbrirModalForm = () => abrirFecharModalForm(true);
@@ -64,6 +76,25 @@ const SolicitacoesPage = () => {
     abrirFecharDrawerView(true);
     setProjetosSelecionadoVisualizar(idProjeto);
   };
+  const handleFecharDrawerView = () => abrirFecharDrawerView(false);
+
+  const handleFecharEditarProjeto = () => abrirFecharEditarProjeto(false);
+
+  const handleFecharConcluirProjeto = () => abrirFecharConcluirProjeto(false);
+
+  const handleFecharPrioridadeProjeto = () => abrirFecharModalPrioridade(false);
+
+  const handleFecharModalConcluirProjeto = () => abrirFecharModalConcluir(false);
+
+  const handleFecharModalAtualizarEtapaProjeto = () => abrirFecharModalFormAtualizarEtapa(false);
+
+  const handleAbrirModalAtualizarEtapaProjeto = (idProjeto) => {
+    setProjetosSelecionadoVisualizar(idProjeto);
+    abrirFecharModalFormAtualizarEtapa(true);
+  };
+
+  const handleFecharAdcPLic = () => abrirFecharModalFormAdicionarProcessoLicitatorio(false);
+  const handleAbrirAdcPLic = () => abrirFecharModalFormAdicionarProcessoLicitatorio(true);
 
   const handleSearchTermChange = (term) => {
     setSearchTerm(term);
@@ -174,6 +205,14 @@ const SolicitacoesPage = () => {
 
     const resultInativo = !loading && data?.filter((resposta) => resposta.situacao === 'INATIVO')
 
+    const resultDepartamento = !loading && data?.map((resposta) => resposta.usuario?.departamento?.nome);
+
+    const resultSecretaria = !loading && data?.map((resposta) => resposta.usuario?.departamento?.secretaria?.sigla);
+
+    console.log('Filtro para departamento', resultDepartamento);
+
+    console.log('Filtro para secretaria', resultSecretaria);
+
     console.log(`Resultado dos projetos ATIVOS`, resultAtivo);
 
     console.log(`Resultado dos projetos INATIVOS`, resultInativo);
@@ -195,8 +234,6 @@ const SolicitacoesPage = () => {
     }
   }, [data]);
 
-  const { data: listaTiposProjeto, loading: loadingTiposProjeto
-  } = useApiRequestGet('/tipos-projeto');
 
   // teste filtro tipo projeto
   const [selectedTipoProjeto, setSelectedTipoProjeto] = useState('');
@@ -262,71 +299,42 @@ const SolicitacoesPage = () => {
   //   }, 3000)
   // }
 
-  // verificaTime()
+  // teste novaEtapa simultaneo
+  const [drawerViewUpdate, setDrawerViewUpdate] = useState(0);
+
+  const handleDrawerViewUpdate = () => {
+    setDrawerViewUpdate((prev) => prev + 1);
+  };
+
+
+  const [uniqueDepartamentos, setUniqueDepartamentos] = useState([]);
+  const [selectedDepartamento, setSelectedDepartamento] = useState("");
+  
+  const [uniqueDepartamentoSecretaria, setUniqueDepartamentoSecretaria] = useState("");
+  const [selectedDepartamentoSecretaria, setSelectedDepartamentoSecretaria] = useState("");
+  
+  useEffect(() => {
+    if (listaDptos && listaDptos.length) {
+      const uniqueDepartamentoSecretaria = [];
+      listaDptos.forEach((departamento) => {
+        const departamentoSecretaria = `${departamento.nome} - ${departamento.secretaria?.sigla || ""}`;
+        if (!uniqueDepartamentoSecretaria.includes(departamentoSecretaria)) {
+          uniqueDepartamentoSecretaria.push(departamentoSecretaria);
+        }
+      });
+      setUniqueDepartamentoSecretaria(uniqueDepartamentoSecretaria);
+    }
+  }, [listaDptos])
+  
   return (
     <Box>
 
       <Typography component='h2' variant='h5' fontWeight={700} color='text.primary'>
-        Solicitações
+        Agendar Clientes
       </Typography>
 
       <Divider />
-      {/* <Box display='flex' flexDirection='row' gap={2} paddingY={2}>
-        <Button startIcon={<AddCircle />} variant='outlined' color='primary' onClick={handleAbrirModalForm} sx={{ width: '290px', height: '50px' }}>
-          Criar solicitação
-        </Button>
-        {session && (session.permissao.id === 1 || session.permissao.id === 2) && (
-          <Button
-            startIcon={<AddCircle />}
-            variant='outlined'
-            color='primary'
-            onClick={handleAbrirAdcPLic}
-            sx={{ width: '380px', height: '50px' }}
-          >
-            Criar Processo Licitatório
-          </Button>
-        )}
-    
-      
-      <Box container justifyContent="flex-end" alignItems="center" spacing={2}></Box>
-        <Grid item sx={{ marginTop: '4px' }}>
-          <TextField
-            size="small"
-            variant="outlined"
-            color="primary"
-            value={searchTerm}
-            onChange={(e) => handleSearchTermChange(e.target.value)}
-            InputProps={{
-              startAdornment: (
-                <InputAdornment position="start">
-                  <FilterAlt color="primary" />
-                </InputAdornment>
-              ),
-            }}
-            placeholder="Filtrar"
-            sx={{
-              '& .MuiOutlinedInput-root': {
-                '& fieldset': {
-                  borderColor: '#1976D2',
-                },
-                '&:hover fieldset': {
-                  borderColor: '#1976D2',
-                },
-                '& input': {
-                  color: 'gray',
-                  textTransform: 'none',
-                  fontWeight: '100',
-                },
-                '& input::placeholder': {
-                  color: '#1976D2',
-                  textTransform: 'uppercase',
-                  fontWeight: '400',
-                },
-              },
-            }}
-          />
-        </Grid>
-      </Box> */}
+
 
       <Box display='flex' flexDirection='row' alignItems='center' justifyContent='space-between' paddingY={2}>
         <Box >
@@ -339,140 +347,9 @@ const SolicitacoesPage = () => {
           >
             Agendar cliente
           </Button>
-        
+       
         </Box>
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          {expanded && (
-            // <Grow in={expanded} >
-            <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 1 }} sx={{ width: expanded ? '50%' : 0, marginBottom: '-41px' }}
-            >
-              <Grid item xs={6} sx={{ width: '100px', height: '50px' }}>
-                <FormControl size="small" variant="outlined" color="primary" sx={{ width: '100%', height: '100%' }}>
-                  <InputLabel htmlFor="filter-ata">Filtro status</InputLabel>
-                  <Select
-                    native
-                    value={filterByAta}
-                    onChange={handleFilterByAtaChange}
-                    label="Filtrar por Ata"
-                    inputProps={{
-                      id: "filter-ata"
-                    }}
-                  >
-                    <option value="all">Todos</option>
-                    <option value="concluded">Concluído</option>
-                    <option value="urgent">Urgente</option>
-                  </Select>
-                </FormControl>
-              </Grid>
-              {/* <Grid item xs={6} sx={{ width: '100px', height: '50px' }}>
-                <Controller
-                  name='tipoProjetoId'
-                  control={control}
-                  render={({ field }) => {
-                    const { onChange, name, onBlur, value, ref } = field;
-
-                    return (
-                      <Autocomplete
-                        fullWidth
-                        size="small"
-                        options={listaTiposProjeto || []}
-                        getOptionLabel={(tipoprojeto) => tipoprojeto.descricao}
-                        value={
-                          listaTiposProjeto &&
-                          listaTiposProjeto.find((item) => item.id === value)
-                        }
-                        onChange={(event, newValue) => {
-                          const selectedValue = newValue ? newValue.id : '';
-                          setSelectedTipoProjeto(selectedValue);
-                          onChange(selectedValue);
-                        }}
-                        onBlur={onBlur}
-                        isOptionEqualToValue={(option, value) => option.id === value}
-                        renderInput={(params) => (
-                          <TextField
-                            {...params}
-                            label='Tipo projeto'
-                            variant='outlined'
-                            name={name}
-                            error={!!errors.tipoProjetoId}
-                            helperText={errors.tipoProjetoId?.message}
-                            InputProps={{
-                              ...params.InputProps,
-                              endAdornment: loadingTiposProjeto && (
-                                <InputAdornment position='start'>
-                                  <CircularProgress color='info' size={28} sx={{ marginRight: 2 }} />
-                                </InputAdornment>
-                              ),
-                            }}
-                            sx={{ width: '100%', height: '100%' }}
-                          />
-                        )}
-                      />
-                    );
-                  }}
-                />
-              </Grid> */}
-              {/* <Grid item xs={6} sx={{ width: '100px', height: '50px' }}>
-                <Autocomplete
-                  fullWidth
-                  options={listaDptos || []}
-                  getOptionLabel={(departamento) => `${departamento.secretaria.sigla} - ${departamento.nome}`}
-                  value={
-                    listaDptos &&
-                    listaDptos.find((item) => item.nome === filterByDepartamento)
-                  }
-                  onChange={(event, newValue) => {
-                    const selectedValue = newValue ? newValue.nome : 'all';
-                    setFilterByDepartamento(selectedValue);
-                  }}
-                  renderInput={(params) => (
-                    <TextField
-                      {...params}
-                      label="Filtrar por Departamento"
-                      variant="outlined"
-                      size="small"
-                      color="primary"
-                      InputProps={{
-                        ...params.InputProps,
-                        id: 'filter-departamento',
-                      }}
-                      sx={{ width: '100%', height: '100%' }}
-                    />
-                  )}
-                />
-              </Grid> */}
-              <Grid item xs={6} sx={{ width: '120px', height: '50px' }}>
-                <Autocomplete
-                  fullWidth
-                  options={['', ...uniqueSecretarias]}
-                  value={selectedSecretaria}
-                  onChange={(event, newValue) => {
-                    setSelectedSecretaria(newValue);
-                  }}
-                  getOptionLabel={(option) => option === '' ? 'Todos' : option}
-                  renderInput={(params) => (
-                    <TextField
-                      {...params}
-                      label="Filtrar por Secretaria"
-                      variant="outlined"
-                      size="small"
-                      color="primary"
-                      InputProps={{
-                        ...params.InputProps,
-                        id: 'filter-secretaria',
-                      }}
-                      sx={{ width: '100%', height: '100%' }}
-                    />
-                  )}
-                />
-              </Grid>
-            </Grid>
-          )}
-          <Button onClick={toggleFilters} variant="contained" color="primary" sx={{ width: '170px', height: '50px', marginLeft: '10px' }}>
-            {expanded ? 'Ocultar Filtros' : 'Mostrar Filtros'}
-          </Button>
-        </div>
-
+    
       </Box>
 
       <Grid item sx={{ marginTop: '4px' }}>
@@ -513,7 +390,7 @@ const SolicitacoesPage = () => {
           }}
         />
       </Grid>
-    
+     
       <Lista
         searchTerm={searchTerm}
         handleAbrirDrawerView={handleAbrirDrawerView}
@@ -529,7 +406,47 @@ const SolicitacoesPage = () => {
         selectedTipoProjeto={selectedTipoProjeto}
       />
 
-  
+      {modalFormAberto && <ModalForm handleFecharModalForm={handleFecharModalForm}
+      //  handleFecharModalAtualizarEtapaProjeto={handleFecharModalAtualizarEtapaProjeto}
+      />}
+
+      {modalFormAtualizarEtapa && (
+        <ModalAtualizarEtapasProjeto
+          handleFecharModalForm={handleFecharModalForm}
+          handleFecharModalAtualizarEtapaProjeto={handleFecharModalAtualizarEtapaProjeto}
+          projetosSelecionadoVisualizar={projetosSelecionadoVisualizar}
+          //teste
+          // etapasProjeto={etapasProjeto}
+          // setEtapasProjeto={setEtapasProjeto}
+          // atualizarEtapasProjeto={atualizarEtapasProjeto}
+          onNovaEtapaCriada={atualizarEtapasProjeto}
+          handleDrawerViewUpdate={handleDrawerViewUpdate}
+        />
+      )}
+
+      {modalFormAdicionarProcessoLicitatorio && (
+        <ModalAdicionarProcessoLicitatorio
+          clickedProjectIds={clickedProjectIds}
+          handleFecharAdcPLic={handleFecharAdcPLic}
+          handleIncluirClick={handleIncluirClick}
+          handleFecharModalForm={handleFecharModalForm}
+
+          //teste
+          selectedProjectIdSonner={selectedProjectIdSonner}
+        />
+      )}
+
+    
+      {editarProjetoAberto && (
+        <ModalEditarProjeto
+          handleFecharEditarProjeto={handleFecharEditarProjeto}
+          projetosSelecionadoVisualizar={projetosSelecionadoVisualizar}
+          handleAbrirModalAtualizarEtapaProjeto={handleAbrirModalAtualizarEtapaProjeto}
+          handleAbrirModalConcluirProjeto={handleAbrirModalConcluirProjeto}
+        />
+      )}
+
+
     </Box>
   );
 };

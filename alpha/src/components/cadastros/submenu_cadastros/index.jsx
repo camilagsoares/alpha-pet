@@ -52,12 +52,12 @@ const SubMenuCadastros = () => {
         </NavLink>
         
       
-        <NavLink to='/departamentos'>
+        <NavLink to='/procedimentos'>
           <MenuItem onClick={handleAbrirModalCadastroAdmin}>
             <ListItemIcon>
               <Inventory2OutlinedIcon fontSize='small' />
             </ListItemIcon>
-            <ListItemText>Departamentos</ListItemText>
+            <ListItemText>Procedimentos</ListItemText>
           </MenuItem>
         </NavLink>
         <NavLink to='/secretarias'>
@@ -68,23 +68,7 @@ const SubMenuCadastros = () => {
             <ListItemText>Secretarias</ListItemText>
           </MenuItem>
         </NavLink>
-        <NavLink to='/tipo-projeto'>
-          <MenuItem onClick={handleAbrirModalCadastroAdmin}>
-            <ListItemIcon>
-              <FeedOutlinedIcon fontSize='small' />
-            </ListItemIcon>
-            <ListItemText>Tipo Projeto</ListItemText>
-          </MenuItem>
-        </NavLink>
        
-        <NavLink to='/status'>
-          <MenuItem onClick={handleAbrirModalCadastroAdmin}>
-            <ListItemIcon>
-              <AspectRatioOutlinedIcon fontSize='small' />
-            </ListItemIcon>
-            <ListItemText>Status</ListItemText>
-          </MenuItem>
-        </NavLink>
       </Menu>
     </React.Fragment>
   );

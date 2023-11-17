@@ -227,7 +227,7 @@ const AppLayout = (props) => {
               <ListItemIcon>
                 <ViewList color='primary' />
               </ListItemIcon>
-              <ListItemText primary='Solicitações' />
+              <ListItemText primary='Clientes Agendados' />
             </ListItemButton>
           </NavLink>
           {/* <NavLink to='/licitacoes'>

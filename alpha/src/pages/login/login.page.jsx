@@ -57,20 +57,22 @@ const LoginPage = () => {
   useEffect(() => {});
 
   return (
-    <Grid container component='main' sx={{ height: '100vh' }} display='flex' justifyContent='center' alignItems='center'>
-      {/* <Grid
+    <Grid container component='main' sx={{ height: '100vh' }}>
+      <Grid
         item
         xs={false}
         sm={4}
         md={7}
+       
         sx={{
-          backgroundImage: 'url(itajuba-cover-image.png)',
-          backgroundRepeat: 'no-repeat',
+          backgroundImage: 'url(dog.jfif)',
+          // backgroundRepeat: 'no-repeat',
           backgroundColor: (t) => (t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900]),
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
-      /> */}
+      />
+   
       <Grid item xs={12} sm={8} md={5} component={Paper} square>
         <Box
           sx={{
@@ -82,9 +84,22 @@ const LoginPage = () => {
             justifyContent: 'center',
           }}
         >
-
-          <Typography component='h1' variant='h5' fontWeight={700}>
-            Alpha pet
+             <Box
+            xs={12}
+            sm={4}
+            md={7}
+            width={500}
+            height={340}
+            marginY={8}
+            sx={{
+              backgroundImage: 'url(log.png)',
+              backgroundRepeat: 'no-repeat',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          />
+          <Typography component='h1' variant='h2' fontWeight={700}>
+            AlphaPet
           </Typography>
           <Box component='form' noValidate onSubmit={handleSubmit(handleEfetuarLogin)} sx={{ marginTop: 1 }}>
             <TextField

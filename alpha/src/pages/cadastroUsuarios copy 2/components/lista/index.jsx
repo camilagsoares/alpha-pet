@@ -59,7 +59,7 @@ const Lista = (props) => {
   };
 
 
-  const { data, error, loading } = useApiRequestGet('/auth/usuarios');
+  const { data, error, loading } = useApiRequestGet('/procedimentos');
   
   const { searchTerm } = props;
   console.log(data)
