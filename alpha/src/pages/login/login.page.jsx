@@ -77,7 +77,6 @@ const LoginPage = () => {
         <Box
           sx={{
             height: '100%',
-            marginX: 4,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
@@ -89,18 +88,18 @@ const LoginPage = () => {
             sm={4}
             md={7}
             width={500}
-            height={340}
+            height={400}
             marginY={8}
             sx={{
-              backgroundImage: 'url(log.png)',
+              backgroundImage: 'url(dogWhite.png)',
               backgroundRepeat: 'no-repeat',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }}
           />
-          <Typography component='h1' variant='h2' fontWeight={700}>
+          {/* <Typography component='h1' variant='h2' fontWeight={700}>
             AlphaPet
-          </Typography>
+          </Typography> */}
           <Box component='form' noValidate onSubmit={handleSubmit(handleEfetuarLogin)} sx={{ marginTop: 1 }}>
             <TextField
               {...register('email')}

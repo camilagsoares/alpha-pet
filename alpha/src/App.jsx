@@ -9,7 +9,7 @@ import Procedimentos from "./pages/cadastroUsuarios copy 2"
 // import CadastroCargos from "./pages/cadastroCargos/index";
 import { AuthContext } from './contexts/auth.context';
 function App() {
-  const [mode, setMode] = useState('light');
+  const [mode, setMode] = useState('dark');
   // const { token, criarSessao } = useContext(AuthContext);
   const tokenInStorage = localStorage.getItem('token');
   // console.log("tokenInStorage",tokenInStorage)
